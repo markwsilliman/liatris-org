@@ -1,5 +1,5 @@
 # Site settings
-title: Liatris - Determine an object's pose and identity using capacitive touch and RFID technology
+title: Liatris
 email: mwsilliman@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Liatris is an open source project that allows an object’s pose and identity to be determined using capacitive touch and RFID technology.
