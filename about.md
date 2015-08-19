@@ -5,16 +5,12 @@ permalink: /about/
 answerrostag: "about"
 ---
 
-For robots to enter the mainstream, a massive number of developers will be needed. Not just developers with lots of funding and years of training, but students, hobbyists and other casual users working alongside seasoned veterans and academics. Formerly insurmountable barriers to entry (money, education, manufacturing, etc.) are rapidly coming down and if we focus on a few specific goals, this collaborative, crowd-sourced, cross-discipline dream can come true:
 
-- **Minimal Cost**: Many developers will need to purchase their own equipment
-- **Open-Source Software**: For collaborative development and shared knowledge
-- **High-School Level Language**:  Supporting a wide range of developer backgrounds
-- **Example-Based Articles**: Teaching quickly through real world solutions
+The ability to reliably read an object’s pose and identity without relying on vision will rip down the barriers for robotics to be present in our everyday lives.  Fully autonomous robotics can be developed if objects can tell the robot not only what they are but what their purpose is and how to utilize them.  Liatris is the start of a dream to make objects smart.
 
-In this article series we wanted to target these four points and give developers a place to start with robotic development. [Fork the project](https://github.com/markwsilliman/turtlebot-tutorial), distribute it, commit changes, add articles and dream big. All content, videos & images are available for you to use as you see fit.
+Autonomous robotics has the power to improve our well being in the short term future if we're willing to take "short cuts" and not require robotics to determine everything on their own.  So let's proudly cheat and let's bring robotics to reality.
 
-Simply put... Robots are awesome! None of us can do this alone (or even in isolated clusters). Join together and lets start hacking robots!
+ I ask you to contribute to Liatris.  The project is vast and requires a wide range of expertise but the potential is real and the benefits can be acquired in the short term.
 
 Change the world, 
 
@@ -24,7 +20,7 @@ Mark Silliman
 
 [Contact information is available on my GitHub page](https://github.com/markwsilliman)
 
-***Full transparency:** I don’t profit from TurtleBot sales nor did I get paid to create this content.*
+***Full transparency:** I don’t profit from the sale of any hardware listed in these articles nor did I get paid to create this content.*
 
 ## List of Contributors
 
@@ -33,6 +29,3 @@ If you’d like to contribute, email me your github username and feel free to ad
 * [Mark Silliman](https://github.com/markwsilliman)
 * [Austin Meyers (AK5A)](https://github.com/ak5a)
 * [Melissa Eaton](https://github.com/MustangSally12)
-* [ClearPath Robotics](https://github.com/clearpathrobotics)
-* [Erico Guizzo](https://twitter.com/ericoguizzo)
-* [Tarik Kelestemur](https://github.com/tkelestemur)
