@@ -11,6 +11,6 @@ One way to do this is to manually tell the robot where three corners of the scre
 
 *Note: The fourth corner can be calculated. This could be reduced to two points but three gives some error tolerance.*
 
-Every time the robot’s main script [liatris.py](https://github.com/markwsilliman/Liatris/blob/master/Robot/liatris.py) is run, it checks if a calibration file exists. If no, it runs through the calibration steps. This is started by attaching laser pointers [TODO: link to appendix a] to the grippers of the robot. Next each arm is moved to the requested corner of the screen by manually using commands on the keyboard that Liatris defines. The lasers aid with accuracy.
+Every time the robot’s main script [liatris.py](https://github.com/markwsilliman/Liatris/blob/master/Robot/liatris.py) is run, it checks if a calibration file exists. If no, it runs through the calibration steps. This is started by attaching [laser pointers](http://liatris.org/2015/02/01/12/) to the grippers of the robot. Next each arm is moved to the requested corner of the screen by manually using commands on the keyboard that Liatris defines. The lasers aid with accuracy.
 
 After all three points are saved, a calibration file is written. These values will allow Liatris to transform any touch screen point to the robot’s coordinate system.
