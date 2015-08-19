@@ -26,6 +26,6 @@ The distance from the LP to the OPs doesn’t matter as long as the OPs are clos
 
 *Note: The number of OPs could be reduced to two points if a screen could determine the type of point, perhaps by comparing size or other distinct signature.*
 
-[Refer to appendix C on how to add conductive points to an object]({{ site.url }}{% post_url 2015-06-19-14 %})
+[Refer to appendix C on how to add conductive points to an object]({% post_url 2015-06-19-14 %})
 
 *Cite: The idea for the three point system was inspired by [Vivien Cormier’s solution](https://github.com/VivienCormier/IOSTangibleDetector).*
