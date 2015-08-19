@@ -5,7 +5,7 @@ date:   2015-02-01 13:46:15
 answerrostag: "avoid_obstacles"
 ---
 
-At this time, Liatris is exclusively a proof of concept. This is written in detail for those who want to replicate the experiment using the [identical hardware]((http://liatris.org/2015/02/01/12/).
+At this time, Liatris is exclusively a proof of concept. This is written in detail for those who want to replicate the experiment using the [identical hardware](http://liatris.org/2015/02/01/12/).
 
 The goal was to deliver a proof of concept working with existing, commercially available hardware.  As a result, this is a convoluted solution requiring the simultaneous use of Linux & Windows operating systems as well as updating scripts written in Ruby, PHP and Python programming languages. A future release will support Python and Linux exclusively.
 
