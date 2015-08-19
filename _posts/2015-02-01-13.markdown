@@ -1,77 +1,97 @@
 ---
 layout: post
-title:  "Going Forward and Avoiding Obstacles with Code"
+title:  "Appendix B: How to Run Demo Scripts"
 date:   2015-02-01 13:46:15
 answerrostag: "avoid_obstacles"
 ---
 
-By this point [you’ve cloned the github repository]({{ site.url }}{% post_url 2015-02-01-10 %}) for this article series and successfully [created a map]({{ site.url }}{% post_url 2015-02-01-11 %}) (saved at `/tmp/mymap`) of your current location. (If you have changed locations since the map generation article, create a new map.)
+At this time, Liatris is exclusively a proof of concept. This is written in detail for those who want to replicate the experiment using the identical hardware.
 
-## TurtleBot Without Obstacle Avoidance
+The goal was to deliver a proof of concept working with existing, commercially available hardware.  As a result, this is a convoluted solution requiring the simultaneous use of Linux & Windows operating systems as well as updating scripts written in Ruby, PHP and Python programming languages. A future release will support Python and Linux exclusively.
 
-Let’s run our first script again. On TurtleBot:
+**Local Network and API**
 
-{% highlight sh %}
-roslaunch turtlebot_bringup minimal.launch
-{% endhighlight %}
+For simplicity of the proof of concept, both the local network and API are on the same server.
 
-On the workstation run:
+Set up a LAMP stack server. You can follow instructions on the [TurtleBot tutorial’s LAMP stack page](http://learn.turtlebot.com/2015/02/01/20/).
 
-{% highlight sh %}
-python ~/helloworld/goforward.py
-{% endhighlight %}
+Copy the entire contents of [Liatris’ repositories /WebServer/ folder](https://github.com/markwsilliman/Liatris/tree/master/WebServer) to the servers /var/www/html/ folder.
 
-Your TurtleBot will be going forward. Intentionally stand in front of it and TurtleBot will crash into your feet. Press CTRL + C to stop it.
+First, modify [/config/config.php](https://github.com/markwsilliman/Liatris/blob/master/WebServer/config/config.php) and set your MySQL database IP, username and password. Use a MySQL user with full privileges because these scripts will automatically create the necessary database and tables.
 
-## TurtleBot with Obstacle Avoidance
+Then, call [yourserverip]/index.php.
 
-Manually orient TurtleBot so it can go forward 3 meters without crashing into anything. On TurtleBot run:
-
-{% highlight sh %}
-roslaunch turtlebot_bringup minimal.launch
-roslaunch turtlebot_navigation amcl_demo.launch map_file:=/tmp/my_map.yaml
-{% endhighlight %}
+The following options are available:
+* Log of points on touch screen - Prints log of touch screen x and y percentages for troubleshooting.
+* Graph last object - Draw the last object’s pose on a graph.
+* Log of RFID values - Prints log of all RFID values read by the RFID reader for troubleshooting.
+* Delete all RFID values - Deletes the entire RFID table. This should be run before every test run. Currently, duplicate RFID values will be ignored. To support duplicate objects in the future, this should be changed to support RFID values that contain both an object_id (object_id is equivalent for all identical object types) and tag_id (tag_id is unique to this specific tag).  *Cite: This solution, EPC tags, was [initially developed by MIT](https://en.wikipedia.org/wiki/Auto-ID_Labs).*
 
 
+**Touch Screen**
 
-On the workstation run:
+It’s critical to use a touch screen that supports multi-touch.
 
-{% highlight sh %}
-roslaunch turtlebot_rviz_launchers view_navigation.launch --screen
-{% endhighlight %}
+On the Windows computer:
 
-TurtleBot can’t reliably determine its initial pose (where it is) so [we’ll give it a hint]({{ site.url }}{% post_url 2015-02-01-12 %}) by using “2D Pose Estimate”. Select “2D Pose Estimate” and specify TurtleBot’s location. Leave **RViz** open so we can monitor its path planning. 
+1. Connect the touch screen monitor. Install any drivers that came with your monitor.
+2. Install [Python](https://www.python.org/)
+3. Install [Kivy](http://kivy.org/)
+4. Download a copy of [send_touch screen_points_to_server.py](https://github.com/markwsilliman/Liatris/blob/master/TouchScreen/send_touchscreen_points_to_server.py).
+    * Edit this file.
+    * Update windowsize_width’s value to your monitor’s width in pixels.
+    * Update windowsize_height’s value to your monitor height in pixels.
+    * Modify the server’s path called in urlopen to point to your server’s address or IP.
+5. Start send_touch screen_points_to_server.py by using the [Start a Kivy Application instructions](http://kivy.org/docs/installation/installation-windows.html). Tip: Running python send_touch screen_points_to_server.py will not work!
 
-***TIP:** After you estimate TurtleBot's pose it can reliably know where it is even while traveling.*
 
-In a separate terminal run:
+To validate it’s running correctly:
 
-{% highlight sh %}
-python ~/helloworld/goforward_and_avoid_obstacle.py
-{% endhighlight %}
+1. Place a finger on the screen; a randomly colored box should appear.
+2. Check if that point is published to the network by reviewing “Log of points on touch screen” listed under “Setup Local Network & API”.
 
-Try walking into the robot’s path while it is driving to see how it responds.
+**RFID Reader**
 
-{% include youtube.html youtubeid="uOPvR9GvJK8" youtubetitle="Go Forward and Avoid Obstacles" %}
-{% include youtube.html youtubeid="XFS5ZqvsXNo" youtubetitle="Go Forward and Avoid Obstacles Results" %}
+Note: These instructions are specific to Alien Technology’s ALR-9680.
 
-## Why Does It Go in Circles?
+Follow the included instructions on how to connect ALR-9680 to your local network. Connect the antenna to Baxter’s right gripper. Use zip ties because Baxter’s parallel gripper’s force isn’t sufficient to hold the antenna.
 
-TurtleBot is looking around for features, comparing them to the map and using that to determine where it is. This process is called localization. Here's an excellent video on TurtleBot localization created by [Melonee Wise](http://www.meloneewise.com):
+Download the [Demo Software Gateway](http://www.alientechnology.com/products/readers/commercial-4-port/) found on ALR-9680’s page. Install this on your Windows computer. Run this to test if your network is set up correctly. This is also helpful for writing values to each RFID tag.
 
-{% include youtube.html youtubeid="Mv1mbsMfbmI" youtubetitle="TurtleBot Localization Primer by Melonee Wise" %}
+1. Download the Ruby API found on [ALR-9680](http://www.alientechnology.com/products/readers/commercial-4-port/)’s page.
+2. Follow the instructions on how to install the Ruby API on the reader.
+3. Install the included (out-dated) version of Ruby (found in the download on Alien’s website) on your Windows Computer.
+4. Copy [both Ruby scripts for the RFID](https://github.com/markwsilliman/Liatris/tree/master/RFID_Reader) Reader.
+5. Modify [rfid_to_server.rb](https://github.com/markwsilliman/Liatris/blob/master/RFID_Reader/rfid_to_server.rb).
+6. Run *ruby rfid_to_server.rb* to start collecting RFID values.
 
-## Let’s have a look at the code:
+To validate it's running correctly:
+1. Place a test tag in front of the antenna.
+2. Verify that you are collecting values by viewing the local network’s Log of RFID values page.
 
-{% highlight sh %}
-gedit ~/helloworld/goforward_and_avoid_obstacle.py
-{% endhighlight %}
+*Tip: [turn_rfid_reader_off.rb](https://github.com/markwsilliman/Liatris/blob/master/RFID_Reader/turn_rfid_reader_off.rb) is a convenient way to disable the reader’s antenna.*
 
-It's also available for [viewing on GitHub](https://github.com/markwsilliman/turtlebot/blob/master/goforward_and_avoid_obstacle.py).
+**Liatris.py**
 
-Note that instead of saying “go forward for a few seconds” we’re saying “we want to end up at the location 3 meters forward regardless of what path takes us there”. TurtleBot can take up to 60 seconds to try and find a path to this location all with a few lines of code.
+Prior to starting this, make sure:
 
-## Learn more at wiki.ros.org
+1. send_touch screen_points_to_server.py is running.
+2. All RFID values have been deleted (by calling the link on the server).
+3. rfid_to_server.rb is running.
 
-* [amcl - probabilistic localization system for a robot moving in 2D](http://wiki.ros.org/amcl)
-* [RViz - 3D visualization tool](http://wiki.ros.org/rviz)
+On the Linux computer:
+
+1. Install ROS and all of Baxter’s python scripts / ROS libraries installed.
+2. Make a local copy of [Liatris/Robot](https://github.com/markwsilliman/Liatris/tree/master/Robot).
+3. Allow Liatris to create local STL and config files
+    * chmod 777 ./stl/
+    * chmod 777 ./
+4. Edit [liatris.py](https://github.com/markwsilliman/Liatris/blob/master/Robot/liatris.py).
+    * Set _server to your API’s server or IP address.
+    * Modify your table’s dimensions by editing draw_table_in_rviz function.
+5. Enable Baxter
+    * rosrun baxter_tools enable_robot.py -e
+6. Start MoveIt
+    * roslaunch baxter_moveit_config demo_baxter.launch
+7. Run Liatris
+    * python liatris.py
