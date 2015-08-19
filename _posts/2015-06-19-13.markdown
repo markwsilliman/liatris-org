@@ -5,7 +5,7 @@ date:   2015-02-01 13:46:15
 answerrostag: "avoid_obstacles"
 ---
 
-At this time, Liatris is exclusively a proof of concept. This is written in detail for those who want to replicate the experiment using the identical hardware.
+At this time, Liatris is exclusively a proof of concept. This is written in detail for those who want to replicate the experiment using the [identical hardware]((http://liatris.org/2015/02/01/12/).
 
 The goal was to deliver a proof of concept working with existing, commercially available hardware.  As a result, this is a convoluted solution requiring the simultaneous use of Linux & Windows operating systems as well as updating scripts written in Ruby, PHP and Python programming languages. A future release will support Python and Linux exclusively.
 
@@ -30,7 +30,7 @@ The following options are available:
 
 **Touch Screen**
 
-It’s critical to use a touch screen that supports multi-touch.
+It’s critical to use a touch screen that supports [multi-touch](http://liatris.org/2015/02/01/12/).
 
 On the Windows computer:
 
@@ -52,7 +52,7 @@ To validate it’s running correctly:
 
 **RFID Reader**
 
-Note: These instructions are specific to Alien Technology’s ALR-9680.
+Note: These instructions are specific to [Alien Technology’s ALR-9680](http://liatris.org/2015/02/01/12/).
 
 Follow the included instructions on how to connect ALR-9680 to your local network. Connect the antenna to Baxter’s right gripper. Use zip ties because Baxter’s parallel gripper’s force isn’t sufficient to hold the antenna.
 
