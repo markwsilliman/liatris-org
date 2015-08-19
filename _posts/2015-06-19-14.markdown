@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Adding Conductive Points"
+title:  "Appendix C: Adding Conductive Points"
 date:   2015-02-01 13:46:16
 answerrostag: "specific_location"
 ---
