@@ -1,47 +1,20 @@
 ---
 layout: post
-title:  "Creating a Map"
+title:  "Additional Future Upgrades"
 date:   2015-02-01 13:46:15
 answerrostag: "create_map"
 ---
+If we know exactly what an object is and its pose, a lot of opportunities arise. The following is an incomplete list of upgrades that would make Liatris a powerful development library.
 
-Though ROS can work in unknown environments, it helps to start with a map of the environment that we’re working in.
-
-In this tutorial we’ll drive TurtleBot once around our office using teleoperation to create a map. This will give us a map we can reference in other scripts, giving TurtleBot completely autonomous navigation.
-
-## Create a Map Via Teleoperation
-
-On TurtleBot, open a terminal window and run:
-
-{% highlight sh %}
-roslaunch turtlebot_bringup minimal.launch
-roslaunch turtlebot_navigation gmapping_demo.launch
-{% endhighlight %}
-
-On the workstation, open a terminal window and run:
-
-{% highlight sh %}
-roslaunch turtlebot_rviz_launchers view_navigation.launch
-roslaunch turtlebot_teleop keyboard_teleop.launch
-{% endhighlight %}
-
-***TIP:** Instead of using the keyboard, the joystick may be more convenient.*
-
-Now using teleoperation, navigate TurtleBot around the entire area you wish to map.
-
-{% include youtube.html youtubeid="9efBzYAi1QI" youtubetitle="Building Your First Map" %}
-
-On TurtleBot, open a terminal window and run:
-
-{% highlight sh %}
-rosrun map_server map_saver -f /tmp/my_map
-ls /tmp/
-{% endhighlight %}
-
-You will now see two files in the `/tmp/ directory my_map.pgm` and `my_map.yaml`. As you create maps in the future, you can save them with different names (e.g. `/tmp/my_office`).
-
-***TIP:** Ubuntu's `/tmp/` directory is automatically cleaned (deleted) on every boot. You may want to use a different directory if you need want to keep the maps.*
-
-## Learn more at wiki.ros.org
-
-* [SLAM Map Building with TurtleBot](http://wiki.ros.org/turtlebot_navigation/Tutorials/Build%20a%20map%20with%20SLAM)
+* Add pitch and roll to the API’s grasp values.
+* The API should include alternative grasp plans in case a collision would be inevitable for the primary plan.
+* Define maximum and minimum grip forces for specific objects.
+* The API could include the object’s weight, allowing the robot to know if the object is empty or not by comparing the object’s weight to the expected weight.
+* Kivy also supports on_touch_move() and on_touch_up(), which would allow humans to move objects on the touch screen and keep Liatris in sync.
+* [Multiple companies](https://www.microsoft.com/en-us/pixelsense/pixelsense.aspx) are working on touch screens that can also read RFID tags.
+* In the perfect world the LP would also be the RFID tag.  This would allow Liatris to identify which point is the LP and therefore eliminate one of the two OPs.
+* Allowed paths can be defined per object. For example, a rule could state that you should never turn a cup on its side when moving it. Alternatively, a knife blade should always face towards the robot. The API should be able to define a wide collection of rules.
+* Cameras or LIDAR can be used to determine the state of objects that have multiple possible states. Determining if a pot has a lid on it or not can be done via cameras after the exact pose and object are known, based on rules specified in the API.
+* The API could specify a maximum velocity to move delicate objects or those carrying liquids.
+* When an object is grasped, it should be added to MoveIt as a collision object attached to the gripper. One option is attach_mesh() from MoveIt’s planning scene interface. This will avoid collisions by the object while it’s being moved. Similarly, the RFID antenna’s CAD model should be attached to the right gripper.
+* The workspace could have many capacitive touch screens covering all work spaces. The exact location and identity of each touch screen would be passed to the local network, allowing a mobile robot to navigate to the specific touch screen and interact with objects on it. This means that any robot, potentially one of many in this workspace, would know exactly where everything is in the building. The result would be a true internet of things experienced with humans and robots working together.
