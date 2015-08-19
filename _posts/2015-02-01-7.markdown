@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Transform touch screen’s points to the robot’s coordinate system"
+title:  "Transform Points"
 date:   2015-02-01 13:46:12
 answerrostag: "networking"
 ---
