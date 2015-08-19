@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Charging the Netbook</title>
+  <meta name="description" content="By default, when you dock to the charging station the Kobuki base will charge but the netbook will not charge. The Kobuki base includes a 19v 2a power rail t... 	 - learn_turtlebot_charging_netbook ">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="/2015/02/01/18/">
+  <link rel="alternate" type="application/rss+xml" title="Learn TurtleBot and ROS" href="/feed.xml" />
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="/js/jquery.fitvids.js"></script>
+  <script src="/js/jquery.answer.ros.org.js"></script>
+  <script>
+	$(document).ready(function() {
+		$(".video_container").fitVids();
+	});
+  </script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-17821189-8', 'auto');
+    ga('send', 'pageview');
+  </script>
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Learn TurtleBot and ROS</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+          <a class="page-link" href="/about/">About</a>
+          
+        
+          
+        
+          
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+<div class="page-navigation"> 
+	   
+				<div class="left"> 
+                <a href="/2015/02/01/17/" title="Previous Post: 
+Button Events">&laquo; Button Events</a> 
+				</div>
+         
+         
+
+        <div class="right"> 
+         
+                <a href="/2015/02/01/19/" title="next Post: 
+Determining Coordinates of Customers">Determining Coordinates of Customers &raquo; </a> 
+         
+        </div> 
+    <div class="clear">&nbsp;</div> 
+</div>
+  <header class="post-header">
+    <h1 class="post-title">Charging the Netbook</h1>
+  </header>
+
+
+        
+      
+    
+
+
+  <article class="post-content">
+    <p>By default, when you dock to the charging station the Kobuki base will charge but the netbook will not charge. The Kobuki base includes a 19v 2a power rail that allows you to autonomously charge the netbook as well.</p>
+
+<div class="critical_warning">
+	<div class="critical_warning_title">Warning</div>
+
+We’ll reiterate ClearPath Robotics’s warning below: “WARNING: This action will most likely void the warranty on your computer. Tread carefully, and proceed at your own risk”.
+
+</div>
+
+<div class="critical_warning">
+	<div class="critical_warning_title">Extremely Important</div>
+
+If you don’t check the polarity of your barrel plug you have a fifty percent chance of killing your laptop. Seriously!
+
+</div>
+
+<div class="critical_warning">
+	<div class="critical_warning_title">Warning #2</div>
+
+If your netbook requires more than 2 amps don't plug it into Kobuki!  If it requires 2 amps or less it should be fine.
+
+</div>
+
+<h2 id="how-to-check-the-polarity">How to Check the Polarity:</h2>
+
+<p>Make sure you check the polarity after you have modified your cable. This is explained in detail below.</p>
+
+<div style="margin-bottom: 1.5em;">
+	
+	<div class="video_container"><iframe width="700" height="393" src="https://www.youtube.com/embed/L_yDauVoVEI?rel=0&amp;showinfo=0" style=" border:0;" allowfullscreen=""></iframe><p class="video_caption">Checking Polarity of Barrel Plug to Laptop</p></div>
+</div>
+
+<p>You’ll need a multimeter (and potentially a thin wire if the positive lead is thicker than your netbook’s barrel plug).</p>
+
+<!-- _includes/image.html -->
+<div class="image-wrapper">
+    
+        <img src="/assets/imag1038.jpg" />
+    
+    
+        <p class="image-caption">A Basic Multimeter</p>
+    
+</div>
+
+<h2 id="special-thanks">Special Thanks</h2>
+
+<p>The rest of this article was written by Clearpath Robotics, who graciously provided us with permission to make a copy of their content. Some of the images were updated from the original document for clarity. The original document is available on <a href="http://www.clearpathrobotics.com/turtlebot_2/">Clearpath Robotics website</a> where you can also buy prebuilt TurtleBot 2s (including the model we used to test this tutorial).</p>
+
+<hr />
+
+<h1 id="modifying-your-laptop-power-cable">Modifying Your Laptop Power Cable</h1>
+
+<p><em>Copied with permission from Clearpath Robotics.</em></p>
+
+<p>This section is aimed specifically at those users who bought a Parts Kit and have their own Laptop which they would like to use with their TurtleBot.</p>
+
+<p><em><strong>WARNING:</strong> This action will most likely void the warranty on your computer. Tread carefully, and proceed at your own risk.</em></p>
+
+<p><em><strong>NOTE:</strong> The 19V power rail is powered only when the Kobuki is plugged in or docked for charging. The laptop cannot charge during operation; the Kobuki must be charging also.</em></p>
+
+<p>The Robotsmiths strongly recommend that you read through the instructions <strong>BEFORE</strong> beginning, and that you follow along with the instructions as you modify your power cable.</p>
+
+<h4 id="tools-required">Tools Required</h4>
+
+<ul>
+  <li>Side Cutters</li>
+  <li>Ruler</li>
+  <li>Wire Stripper</li>
+  <li>Terminal Crimper</li>
+  <li>Heat Gun</li>
+  <li>Soldering Iron</li>
+</ul>
+
+<h4 id="parts-required">Parts Required</h4>
+
+<p><em>If you do not have experience crimping wires, buying spares is recommended.</em></p>
+
+<ul>
+  <li>1x Unmodified Laptop Power Cable</li>
+  <li>1x Four position Male Molex Connector (Digikey P/N: WM3701IND)</li>
+  <li>1x Four position Female Molex Connector (Digikey P/N: WM1018IND)</li>
+  <li>2x Male Crimp Cable Ends (Digikey P/N: WM2502IND)</li>
+  <li>2x Female Crimp Cable Ends (Digikey P/N: WM2501CTIND)</li>
+  <li>2x Piece of Heat Shrink, 2” length ((Digikey P/N: EPS2316IND)</li>
+</ul>
+
+<!-- _includes/image.html -->
+<div class="image-wrapper">
+    
+        <img src="/assets/imag1022_burst002.jpg" />
+    
+    
+        <p class="image-caption">Wire Stripper / Crimper (Left), Side Cutter (top, center) and Unmodified Laptop Power Cable (Right)</p>
+    
+</div>
+
+<!-- _includes/image.html -->
+<div class="image-wrapper">
+    
+        <img src="/assets/imag1027.jpg" />
+    
+    
+        <p class="image-caption">1x Four Position Male Molex Connector (Left) and 1x Four Position Female Molex Connector (Right)</p>
+    
+</div>
+
+<!-- _includes/image.html -->
+<div class="image-wrapper">
+    
+        <img src="/assets/imag1025.jpg" />
+    
+    
+        <p class="image-caption">2x Male Crimp Cable Ends (Top) and 2x Female Crimp Cable Ends (Bottom)</p>
+    
+</div>
+
+<!-- _includes/image.html -->
+<div class="image-wrapper">
+    
+        <img src="/assets/imag1023.jpg" />
+    
+    
+        <p class="image-caption">Heat Shrink (Left) and Heat Gun (Right)</p>
+    
+</div>
+
+<p>To start, measure 2ft. from the ferrite bead shown in the picture below.</p>
+
+<p><em><strong>NOTE:</strong> Our netbook shipped without a ferrite bead as shown below.</em></p>
+
+<!-- _includes/image.html -->
+<div class="image-wrapper">
+    
+        <img src="/assets/imag1028.jpg" />
+    
+    
+        <p class="image-caption">Power Cord</p>
+    
+</div>
+
+<p>Snip the cord at 2f, shown below. You now have the Power Adaptor section and the Laptop section. The laptop section is the one with the barrel plug that is inserted into the Laptop.</p>
+
+<!-- _includes/image.html -->
+<div class="image-wrapper">
+    
+        <img src="/assets/imag1029.jpg" />
+    
+    
+        <p class="image-caption">Power Cord and Side Cutter</p>
+    
+</div>
+
+<p>Next, strip the sheath from approximately 1” of the wire, as shown below. Do this for both pieces.</p>
+
+<!-- _includes/image.html -->
+<div class="image-wrapper">
+    
+        <img src="/assets/imag1030.jpg" />
+    
+    
+        <p class="image-caption">Wire Stripper</p>
+    
+</div>
+
+<p>You will see a white sheathed wire, and a bunch of bare wires. Aggregate the bare wires into a group and twist them together as shown below. Do this for both pieces.</p>
+
+<!-- _includes/image.html -->
+<div class="image-wrapper">
+    
+        <img src="/assets/imag1032.jpg" />
+    
+    
+        <p class="image-caption">Aggregate the Bare Wires</p>
+    
+</div>
+
+<p>Use heat shrink to cover the twisted bunch of bare wires. Do this for both ends. In this step, the goal is to leave about ¼” exposed for crimping.</p>
+
+<p>Also, strip a ¼” of sheath from the white sheathed wire.</p>
+
+<!-- _includes/image.html -->
+<div class="image-wrapper">
+    
+        <img src="/assets/imag1043-2.jpg" />
+    
+    
+        <p class="image-caption">Heat Shrink</p>
+    
+</div>
+
+<p>Don’t forget to shrink it with your heat gun!</p>
+
+<p>It’s time to crimp the pins on each of the two pieces. The end that crimps around the sheathed wire is called the “insulation crimp”. You may have to trim the insulation crimps if they are too long. Good thing you bought spare parts!</p>
+
+<!-- _includes/image.html -->
+<div class="image-wrapper">
+    
+        <img src="/assets/imag1040-1.jpg" />
+    
+    
+        <p class="image-caption">Crimp Cable End</p>
+    
+</div>
+
+<p>Crimp the MALE pins to the Power Adaptor piece and the FEMALE pins to the Laptop piece. First, crimp the section closest to the pin around the bare leads, as shown below. This will require a small size on the crimp tool. Remember to perform a simple tug-test to ensure you have chosen the right crimp size. Because of the small size, we recommend soldering the wire crimp before crimping the insulation crimp.</p>
+
+<!-- _includes/image.html -->
+<div class="image-wrapper">
+    
+        <img src="/assets/2015-02-06_1526a.png" />
+    
+    
+        <p class="image-caption">Female Crimp Cable Ends</p>
+    
+</div>
+
+<p>Next, crimp the pins to the sheathed wire, as shown below. This will require a slightly larger size on the crimp tool.</p>
+
+<!-- _includes/image.html -->
+<div class="image-wrapper">
+    
+        <img src="/assets/2015-02-06_1531.png" />
+    
+    
+        <p class="image-caption">Female Crimp Cable Ends</p>
+    
+</div>
+
+<p>Now that each end is crimped, be sure to slide a piece of heat shrink over the pins and down the wire for later use. This step is shown below. Do this for both pieces.</p>
+
+<!-- _includes/image.html -->
+<div class="image-wrapper">
+    
+        <img src="/assets/2015-02-06_1527.png" />
+    
+    
+        <p class="image-caption">Heat Shrink</p>
+    
+</div>
+
+<p>Now the pins need to be inserted into the housings. The MALE housing with the clip (shown below) must go on the Laptop piece, while the FEMALE housing must go on the Power Adaptor piece. Please note the location of each of the pins with respect to the orientation of the housing, shown below for the Laptop piece. For the power adaptor piece it is a simple matter of aligning the housings and ensuring that black goes to black and white goes to white. <strong>WHITE IS POSITIVE.</strong></p>
+
+<!-- _includes/image.html -->
+<div class="image-wrapper">
+    
+        <img src="/assets/2015-02-06_1527b.png" />
+    
+    
+        <p class="image-caption">Male Molex Connector</p>
+    
+</div>
+
+<div class="critical_warning">
+	<div class="critical_warning_title">Warning!!!</div>
+
+BEFORE you plug in your laptop, it is recommended that you test your work. First, ensure continuity.
+
+</div>
+
+<p>Verify that the positive wire is connected to the inside of the barrel plug. Next, verify that there is not a short between the pins. To test the voltage, plug the Laptop section into the Kuboki’s 19v port and power on. Don’t be alarmed that your housing doesn’t have 6 pins, it will still fit. The outside of the barrel plug should be ground. The inside should measure +19V. You’re done!</p>
+
+<h4 id="power-adaptor-section">Power Adaptor section:</h4>
+
+<!-- _includes/image.html -->
+<div class="image-wrapper">
+    
+        <img src="/assets/2015-02-06_1528.png" />
+    
+    
+        <p class="image-caption">Female Molex Connector</p>
+    
+</div>
+
+<h4 id="laptop-section">Laptop section:</h4>
+
+<!-- _includes/image.html -->
+<div class="image-wrapper">
+    
+        <img src="/assets/2015-02-06_1528.png" />
+    
+    
+        <p class="image-caption">Male Molex Connector</p>
+    
+</div>
+
+<h4 id="final-mating-product">Final Mating Product!</h4>
+
+<!-- _includes/image.html -->
+<div class="image-wrapper">
+    
+        <img src="/assets/2015-02-06_1528c.png" />
+    
+    
+        <p class="image-caption">Connected</p>
+    
+</div>
+
+
+  </article>
+
+</div>
+
+<div class="page-navigation"> 
+		<hr>
+		<div class="page-navigation-title">Keep Reading</div>
+        <div class="clear">&nbsp;</div> 
+        
+         
+				<div class="left"> 
+                <a href="/2015/02/01/17/" title="Previous Post: 
+Button Events">&laquo; Button Events</a> 
+				</div>
+         
+
+        <div class="right"> 
+         
+                <a href="/2015/02/01/19/" title="next Post: 
+Determining Coordinates of Customers">Determining Coordinates of Customers &raquo; </a> 
+         
+        </div> 
+        <div class="clear">&nbsp;</div> 
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <!--<h2 class="footer-heading">Learn TurtleBot and ROS</h2>-->
+	<div style="margin-bottom:1.5em;">
+	<!--<h4><a href="https://groups.google.com/forum/#!forum/ros-sig-turtlebot" target="_blank">Questions / comments?  Post them on TurtleBot's Group</a></h4>-->
+	<div id="answerrosorg_title">
+		<div id="answerrosorg_title_main">ROS Answers Related to this Page</div>
+		
+		<div id="answerrosorg_title_leftmargin">
+			<div id="answerrosorg_title_sublinks">
+				<a href="javascript:void(0);" id="viewallquestions_footer" class="answerrosorg_hideifnoquestionsexist">View all Questions</a><span class="answerrosorg_hideifnoquestionsexist" id="questionsdot_footer">&#183;</span><a href="javascript:void(0);" id="askyourquestion_footer">Ask your Question</a>
+			</div>
+			<div class="answerrosorg_hideifnoquestionsexist" id="answerrosorg_title_sub">
+				Recent Questions
+			</div>
+			<div id="answerrosorg"></div>
+		</div>
+	</div>
+	
+	
+	</div>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <li>Learn TurtleBot and ROS</li>
+          <!--<li><a href="mailto:mwsilliman@gmail.com">mwsilliman@gmail.com</a></li>-->
+           
+          <li>
+            <a href="https://github.com/markwsilliman">
+              <span class="icon  icon--github">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+                </svg>
+              </span>
+
+              <span class="username">markwsilliman</span>
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/MWSilliman">
+              <span class="icon  icon--twitter">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809
+                  c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/>
+                </svg>
+              </span>
+
+              <span class="username">MWSilliman</span>
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+
+    <!--
+  <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+         
+        </ul>
+      </div>
+-->
+
+      <div class="footer-col  footer-col-3">
+        <p class="text">An open source getting started guide for web, mobile and maker developers interested in robotics.
+  <br><a href="/about/">Contribute to the Project</a><br><a href="https://github.com/markwsilliman/turtlebot-tutorial">Fork the Project</a></p>
+      </div>
+	  <div class="footer-col  footer-col-3">
+			<p class="text">Developed with <a href="http://www.turtlebot.com">TurtleBot.com</a> & <a href="http://www.ros.org">ROS.org</a>.</p>
+	  </div>
+    </div>
+	
+	<div class="rosanswertag">ROS Answers Tag: learn_turtlebot_charging_netbook<input type="hidden" id="answerrostag_hidden" value="charging_netbook"></div>
+	
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>
