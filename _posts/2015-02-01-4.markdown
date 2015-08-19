@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Liatris’ API"
+title:  "API"
 date:   2015-02-01 13:46:09
 answerrostag: "ubuntu"
 ---

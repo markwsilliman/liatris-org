@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Liatris’ Touch Screen"
+title:  "Touch Screen"
 date:   2015-02-01 13:46:11
 answerrostag: "install_turtlebot"
 ---
