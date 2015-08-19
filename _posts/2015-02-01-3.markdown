@@ -1,22 +1,12 @@
 ---
 layout: post
-title:  "Hardware Setup"
+title:  "RFID"
 date:   2015-02-01 13:46:08
 answerrostag: "hardware"
 ---
 
-{% include youtube.html youtubeid="dzZGsZPW4aY" youtubetitle="TurtleBot Hardware Setup"%}
+An RFID tag must be added to each object in front of the LP and in line with the object's orientation.
 
-TurtleBot comes pre-built; you simply need to plug in the cables.
+{% include image.html img="/assets/lptorfid.jpg" title="RFID tag's location relative to LP" %}
 
-Take your netbook computer and place it on the second shelf with the USB plugs facing the rear of TurtleBot. (The rear has the various plugs into the Kobuki base.)
-
-{% include image.html img="/assets/kobuki-status-light-2.jpg" title="Kobuki Base Showing Rear Plugs" %}
-
-TurtleBot comes with two cables: a USB A-B cable and a USB splitter-type cable. Plug the A side of the USB cable into your laptop and the B side into the Kobuki base. Next, plug the female side of the USB splitter into the cable coming out of the Kinect. Plug the male USB from the splitter into the laptop and the other half of the splitter into the 12V 1.5amp plug on the Kobuki base.
-
-Finally, locate the On/Off button on the side of the Kobuki base, turn TurtleBot on, and it is ready to go!
-
-{% include image.html img="/assets/kobuki-onoff-2.jpg" title="Kobuki Base On/Off Button" %}
-
-***EXTRA CREDIT:** The laptop uses its own battery power, not TurtleBot’s. The kit comes with the ability to plug the laptop into the Kobuki base so that it charges up when TurtleBot is charging. [Information on setting this up is here]({{ site.url }}{% post_url 2015-02-01-18 %}).*
+*Note: It’s important that the distance from LP to the edge of the object is less than 5 cm because the RFID reader will attempt to read the RFID tag’s value 20 cm in front of the LP. If the LP was placed too far from the edge of the object, the RFID reader may collide with it.*
