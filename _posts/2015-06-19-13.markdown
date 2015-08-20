@@ -65,7 +65,8 @@ Download the [Demo Software Gateway](http://www.alientechnology.com/products/rea
 3. Install the included (out-dated) version of Ruby (found in the download on Alien’s website) on your Windows Computer.
 4. Copy [both Ruby scripts for the RFID](https://github.com/markwsilliman/Liatris/tree/master/RFID_Reader) Reader.
 5. Modify [rfid_to_server.rb](https://github.com/markwsilliman/Liatris/blob/master/RFID_Reader/rfid_to_server.rb).
-6. Run *ruby rfid_to_server.rb* to start collecting RFID values.
+6. Update the server called in URI.parse to point to your server’s address or IP.
+7. Run *ruby rfid_to_server.rb* to start collecting RFID values.
 
 To validate it's running correctly:
 1. Place a test tag in front of the antenna.
