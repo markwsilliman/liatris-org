@@ -22,11 +22,13 @@ First, modify [/config/config.php](https://github.com/markwsilliman/Liatris/blob
 Then, call [yourserverip]/index.php.
 
 The following options are available:
+
 * Log of points on touch screen - Prints log of touch screen x and y percentages for troubleshooting.
 * Graph last object - Draw the last object’s pose on a graph.
 * Log of RFID values - Prints log of all RFID values read by the RFID reader for troubleshooting.
-* Delete all RFID values - Deletes the entire RFID table. This should be run before every test run. Currently, duplicate RFID values will be ignored. To support duplicate objects in the future, this should be changed to support RFID values that contain both an object_id (object_id is equivalent for all identical object types) and tag_id (tag_id is unique to this specific tag).  *Cite: This solution, EPC tags, was [initially developed by MIT](https://en.wikipedia.org/wiki/Auto-ID_Labs).*
+* Delete all RFID values - Deletes the entire RFID table. This should be run before every test run. Currently, duplicate RFID values will be ignored. To support duplicate objects in the future, this should be changed to support RFID values that contain both an object_id (object_id is equivalent for all identical object types) and tag_id (tag_id is unique to this specific tag).
 
+*Cite: This solution, EPC tags, was [initially developed by MIT](https://en.wikipedia.org/wiki/Auto-ID_Labs).*
 
 **Touch Screen**
 
