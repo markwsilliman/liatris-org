@@ -9,4 +9,4 @@ An RFID tag must be added to each object in front of the LP and in line with the
 
 {% include image.html img="/assets/lptorfid.jpg" title="RFID tag's location relative to LP" %}
 
-*Note: It’s important that the distance from LP to the edge of the object is less than 5 cm because the RFID reader will attempt to read the RFID tag’s value 20 cm in front of the LP. If the LP was placed too far from the edge of the object, the RFID reader may collide with it.*
+*Note: It’s important that the distance from LP to the edge of the object is less than 5 cm because the RFID reader will attempt to read the RFID tag’s value 20 cm in front of the LP. If the LP was placed too far from the edge of the object, the RFID reader may collide with the object.*
