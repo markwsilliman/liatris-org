@@ -7,7 +7,7 @@ answerrostag: "introduction"
 
 Liatris is an open source project that can determine any object’s exact pose and identity by using a touch screen and RFID reader. Liatris includes a global API powered by a database of objects. An object’s 3D CAD model can be added to the [robot's 3D perception](http://liatris.org/2015/02/01/9/). The API also provides recommendations on how to grasp an object relative to the CAD model and pose, resulting in an accurate mobile manipulation solution.
 
-Liatris is released under the BSD license.
+Liatris is released under the [BSD license](https://en.wikipedia.org/wiki/BSD_licenses).
 
 At this time Liatris is a proof of concept. A stable library is in development.
 
