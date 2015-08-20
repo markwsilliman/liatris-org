@@ -24,7 +24,7 @@ Two of the conductive points should be closer to each other than either is from 
 
 The distance from the LP to the OPs doesn’t matter as long as the OPs are closer to each other than to the LP. OPs are exclusively used to determine the orientation and have nothing to do with determining the object’s dimensions.
 
-*Note: The number of OPs could be reduced to two points if a screen could determine the type of point, perhaps by comparing size or other distinct signature.*
+*Note: The number of OPs could be reduced to two points if a screen could determine the type of point, perhaps by comparing size or other [distinct signature](http://liatris.org/2015/02/01/11/).*
 
 [Refer to appendix C on how to add conductive points to an object](http://liatris.org/2015/02/01/14/)
 
