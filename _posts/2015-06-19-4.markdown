@@ -11,7 +11,7 @@ The API returns:
 
 * STL_FILE: Path to 3D CAD model of the object on the API
     * The CAD model’s file will automatically be cached to the local network.
-    * This file can be added to a MoveIt scene as a collision object.
+    * This file can be added to a [MoveIt](http://liatris.org/2015/02/01/9/) scene as a collision object.
 * Transformation (x and y)
     * X and y offsets allow you to calculate the 2D center of the base relative to the LP.  We’ll call this the center of the base “COB” from now on. The orientation of the object is taken into account when adjusting offsets.
     * Offsets are always defined relative to the 3D CAD model’s coordinate system.
