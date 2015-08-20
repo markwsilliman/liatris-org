@@ -8,6 +8,7 @@ answerrostag: "specific_location"
 For the purpose of simple object tests for demo purposes, three capacitive touch points were added to the objects crudely. There are far better approaches to this, but this works for some quick tests, though it only works on metal objects.
 
 Purchase the following items:
+
 * More than 3 replacement tips for capacitive stylus pens (like you’d use for an iPad).
     * [Friendly Swede](http://www.amazon.com/gp/product/B00LIHFPWC?psc=1&redirect=true&ref_=oh_aui_detailpage_o05_s01) worked well.
     * Metal mesh tips will hold up better.
