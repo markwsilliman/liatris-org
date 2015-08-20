@@ -16,7 +16,7 @@ For right now:
 
 **Triangular Points**
 
-Each object must have three conductive points below its base. These points can be anywhere below the base of the object but must have a distinct arrangement as described below.
+Each object must have [three conductive points](http://liatris.org/2015/02/01/14/) below its base. These points can be anywhere below the base of the object but must have a distinct arrangement as described below.
 
 Two of the conductive points should be closer to each other than either is from the third point. This third conductive point is referred to as the “lead point” (we’ll use LP from now on for “lead point”).  The other two points are the “orientation points” (OPs). The orientation of the object is determined by calculating the direction of the line that starts at the midpoint of the OPs and ends at LP.
 
