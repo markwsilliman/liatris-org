@@ -92,7 +92,7 @@ On the Linux computer:
     * chmod 777 ./
 4. Edit [liatris.py](https://github.com/markwsilliman/Liatris/blob/master/Robot/liatris.py).
     * Set _server to your API’s server or IP address.
-    * Modify your table’s dimensions by editing draw_table_in_rviz function.
+    * Modify your table’s dimensions by editing the draw_table_in_rviz function.
 5. Enable Baxter
     * rosrun baxter_tools enable_robot.py -e
 6. Start MoveIt
