@@ -10,9 +10,9 @@ When an object is placed on a touch screen, the [python script](https://github.c
 
 We use a multi-touch projected capacitive touch screen that [supports 20 simultaneous touch points](http://liatris.org/2015/02/01/12/). This allows us to accurately determine the pose of many objects placed on the same screen.
 
-*Note: Other types of touch screens, like those that use infrared touch, won’t work because Liatris requires multi-touch support.*
+*Note: Other types of touch screens, like those that use [infrared touch](https://en.wikipedia.org/wiki/Touchscreen#Infrared_grid), won’t work because Liatris requires multi-touch support.*
 
-[Kivy](http://kivy.org/) provides an easy way to develop applications for touch screens and is compatible with Python. Therefore, we chose to develop the code to read touch screen points with Kivy and Python.
+[Kivy](http://kivy.org/) provides an easy way to develop applications for touch screens and is compatible with Python.
 
 [The script](https://github.com/markwsilliman/Liatris/blob/master/TouchScreen/send_touchscreen_points_to_server.py) is brief. Every time a point is read by the touch screen on_touch_down() is called and an object called “touch” is passed to the function.  touch.x & touch.y is the cartesian coordinate.
 
