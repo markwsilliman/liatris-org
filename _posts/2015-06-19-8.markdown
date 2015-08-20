@@ -9,7 +9,7 @@ After an object is placed on the touch screen, we know both the undefined object
 
 {% include image.html img="/assets/lptorfid.jpg" title="RFID tag's location relative to LP" %}
 
-n the example code, the right arm of the robot holds a [RFID antenna](http://liatris.org/2015/02/01/12/).  After an object’s pose is calculated by the local network, the RFID reader is placed 20 cm in front of the LP. The robot also rotates the antenna to be perpendicular to the orientation of the object.
+In the [example code](https://github.com/markwsilliman/Liatris), the right arm of the robot holds a [RFID antenna](http://liatris.org/2015/02/01/12/).  After an object’s pose is calculated by the local network, the RFID reader is placed 20 cm in front of the LP. The robot also rotates the antenna to be perpendicular to the orientation of the object.
 
 The RFID’s antenna reads the RFID tag and POSTs it’s value to the local network.
 
