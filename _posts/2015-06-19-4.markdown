@@ -10,7 +10,7 @@ The long term goal is to create a [decentralized](http://www.cnbc.com/2014/11/13
 The API returns:
 
 * STL_FILE: Path to 3D CAD model of the object on the API
-    * The CAD model’s file will automatically be copied to the end user’s computer if they don’t have a local copy yet.
+    * The CAD model’s file will automatically be cached in local network if they don’t have a local copy yet.
     * This file can be added to a MoveIt scene as a collision object.
 * Transformation (x and y)
     * X and y offsets allow you to calculate the 2D center of the base relative to the LP.  We’ll call this the center of the base “COB” from now on. The orientation of the object is taken into account when adjusting offsets.
