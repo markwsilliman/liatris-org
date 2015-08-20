@@ -5,7 +5,7 @@ date:   2015-02-01 13:46:09
 answerrostag: "ubuntu"
 ---
 
-The long term goal is to create a decentralized, open source, global database of objects.  Manufacturers will be able to add objects and update them at any time. End users’ robots can query the API for any object by passing the object’s RFID tag.
+The long term goal is to create a [decentralized](http://www.cnbc.com/2014/11/13/forget-currency-bitcoin-tech-could-disrupt-massively.html), open source, global database of objects.  Manufacturers will be able to add objects and update them at any time. End users’ robots can query the API for any object by passing the object’s RFID tag.
 
 The API returns:
 
