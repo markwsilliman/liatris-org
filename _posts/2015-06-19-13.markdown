@@ -69,6 +69,7 @@ Download the [Demo Software Gateway](http://www.alientechnology.com/products/rea
 7. Run *ruby rfid_to_server.rb* to start collecting RFID values.
 
 To validate it's running correctly:
+
 1. Place a test tag in front of the antenna.
 2. Verify that you are collecting values by viewing the local network’s Log of RFID values page.
 
