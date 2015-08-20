@@ -16,7 +16,7 @@ The API returns:
     * X and y offsets allow you to calculate the 2D center of the base relative to the LP.  We’ll call this the center of the base “COB” from now on. The orientation of the object is taken into account when adjusting offsets.
     * Offsets are always defined relative to the 3D CAD model’s coordinate system.
     * Liatris will transform the offsets from the object’s coordinate system to that of the  touch screen.
-    * This is convenient because it may be impossible to put the LP in the center of the base. For example, a pot that has a long handle and its COB may not even be touching the base. Therefore, you place the LP on one side and use offsets to correctly position the object’s CAD model.
+    * This is convenient because it may be impossible to put the LP in the center of the base. For example, a pot's (with a long handle) COB may not even be touching the base. Therefore, you place the LP on one side and use offsets to correctly position the object’s CAD model.
 
 {% include image.html img="/assets/offsetxy.jpg" title="COB relative to LP" %}
 
