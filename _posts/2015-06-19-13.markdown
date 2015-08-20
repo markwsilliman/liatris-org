@@ -15,7 +15,7 @@ For simplicity of the proof of concept, both the local network and API are on th
 
 Set up a LAMP stack server. You can follow instructions on the [TurtleBot tutorial’s LAMP stack page](http://learn.turtlebot.com/2015/02/01/20/).
 
-Copy the entire contents of [Liatris’ repositories /WebServer/ folder](https://github.com/markwsilliman/Liatris/tree/master/WebServer) to the servers /var/www/html/ folder.
+Copy the entire contents of [Liatris’ repository's /WebServer/ folder](https://github.com/markwsilliman/Liatris/tree/master/WebServer) to the servers /var/www/html/ folder.
 
 First, modify [/config/config.php](https://github.com/markwsilliman/Liatris/blob/master/WebServer/config/config.php) and set your MySQL database IP, username and password. Use a MySQL user with full privileges because these scripts will automatically create the necessary database and tables.
 
