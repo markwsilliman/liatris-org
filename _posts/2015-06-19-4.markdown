@@ -21,7 +21,7 @@ The API returns:
 {% include image.html img="/assets/offsetxy.jpg" title="COB relative to LP" %}
 
 * Dimensions of the object (x, y and z)
-    * In the future it may be better practice to import this from the CAD model because this data is redundant.
+    * It may be better practice to import this from the CAD model because this data is redundant.
 * Grasp pose (x, y, z and yaw)
     * Defines the ideal pose for the gripper prior to grasping the object, relative to the COB.
     * All values are relative to the 3D CAD model’s coordinate system.
