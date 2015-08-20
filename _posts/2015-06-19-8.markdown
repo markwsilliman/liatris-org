@@ -5,7 +5,7 @@ date:   2015-02-01 13:46:13
 answerrostag: "test_kinect"
 ---
 
-After an object is placed on the touch screen, we know that an undefined object LP's exact pose and it's orientation. To determine the object’s identity, we use an RFID tag placed on the object. The tag must be placed at a specific point on the outer surface of the object. This position is determined by starting at the LP and following the object's orientation until we get to the outer wall.
+After an object is placed on the touch screen, we know the value of an undefined object's pose and orientation. To determine the object’s identity, we use an RFID tag placed on the object. The tag must be placed at a specific point on the outer surface of the object. This position is determined by starting at the LP and following the object's orientation until we get to the outer wall.
 
 {% include image.html img="/assets/lptorfid.jpg" title="RFID tag's location relative to LP" %}
 
