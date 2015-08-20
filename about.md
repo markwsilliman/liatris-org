@@ -6,7 +6,7 @@ answerrostag: "about"
 ---
 
 
-The ability to reliably read an object’s pose and identity without relying on vision will rip down the barriers for robotics to be present in our everyday lives.  Fully autonomous robotics can be developed *today* if objects can tell the robot not only what they are but what their purpose is and how to utilize them.  Liatris is the start of a dream to make objects smart.
+The ability to reliably read an object’s pose and identity without relying on vision will rip down the barriers for robotics to be present in our everyday lives.  Fully autonomous robotics can be developed *today* if objects can tell the robot not only what they are but what their purpose is and how to utilize them.
 
 Autonomous robotics has the power to improve our well being in the short term future if we're willing to take "short cuts" and not require robotics to determine everything on their own.  So let's proudly cheat and let's bring robotics to reality.
 
