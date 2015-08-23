@@ -10,4 +10,3 @@ answerrostag: "teleoperation"
 After the touch screen has detected the object and the RFID reader has read the object’s RFID tag’s value, we know the identity and pose of the object.  At this point, the goal is to add the object’s 3D CAD model to a MoveIt scene.  MoveIt is used to control the robot and avoid collisions with the recently added object when completing future tasks.
 
 Liatris.py starts by checking if a local copy of the CAD model’s file is available. If no, one is downloaded and cached locally. The object’s pose and CAD model’s file are added to MoveIt using [MoveIt’s add_mesh function](http://moveit.ros.org/wiki/Environment_Representation/Overview). This creates a collision object in MoveIt in the color defined by Liatris’ API.
-

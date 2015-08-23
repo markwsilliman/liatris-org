@@ -9,7 +9,7 @@ At this time, Liatris is exclusively a proof of concept. This is written in deta
 
 The goal was to deliver a proof of concept working with existing, commercially available hardware.  As a result, this is a convoluted solution requiring the simultaneous use of Linux & Windows operating systems as well as updating scripts written in Ruby, PHP and Python programming languages. A future release will support Python and Linux exclusively.
 
-**Local Network and API**
+## Local Network and API
 
 For simplicity of the proof of concept, both the local network and API are on the same server.
 
@@ -30,7 +30,7 @@ The following options are available:
 
 *Cite: This solution, EPC tags, was [initially developed by MIT](https://en.wikipedia.org/wiki/Auto-ID_Labs).*
 
-**Touch Screen**
+## Touch Screen
 
 It’s critical to use a touch screen that supports [multi-touch](http://liatris.org/2015/02/01/12/).
 
@@ -52,7 +52,7 @@ To validate it’s running correctly:
 1. Place a finger on the screen; a randomly colored box should appear.
 2. Check if that point is published to the network by reviewing “Log of points on touch screen” listed under “Setup Local Network & API”.
 
-**RFID Reader**
+## RFID Reader
 
 Note: These instructions are specific to [Alien Technology’s ALR-9680](http://liatris.org/2015/02/01/12/).
 
@@ -75,7 +75,7 @@ To validate it's running correctly:
 
 *Tip: [turn_rfid_reader_off.rb](https://github.com/markwsilliman/Liatris/blob/master/RFID_Reader/turn_rfid_reader_off.rb) is a convenient way to disable the reader’s antenna.*
 
-**Liatris.py**
+## Liatris.py
 
 Prior to starting this, make sure:
 

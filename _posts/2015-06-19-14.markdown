@@ -17,7 +17,7 @@ Purchase the following items:
 * Standard electrician’s tape
 
 
-**Steps**
+## Steps
 
 1. Rip three replacement tips from the tips housing using pliers.
 2. Using the conductive tape to attach the tips to the object.

@@ -17,7 +17,7 @@ A ruby script, [rfid_to_server.py](https://github.com/markwsilliman/Liatris/blob
 
 *Note: This script uses [Alien Technology’s Ruby API](http://liatris.org/2015/02/01/12/), but the logic could be applied to any RFID reader’s API.*
 
-**Arduino HF Tag Solution**
+## Arduino HF Tag Solution
 
 Originally this project was developed to use an Arduino UNO and its PN532 RFID shield. Though this sounds great on paper, its reads were inconsistent for tags farther than a couple of centimeters away. In practice, trying to place an RFID reader less than a couple of centimeters away from an unknown object often results in physical collisions. This is a limitation of 13.56 MHz readers (HF RFID).
 

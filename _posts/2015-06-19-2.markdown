@@ -5,7 +5,7 @@ date: 2015-02-01T13:46:07.000Z
 answerrostag: need
 ---
 
-**Object Composition**
+## Object Composition
 
 For right now:
 
@@ -14,7 +14,7 @@ For right now:
 
 *Note: Improvements in the multi-touch capabilities of resistive touch screens, which can be activated by any material, may provide a solution to remove the metal object requirement.  However, this does add the downside of requiring the object to have a three dimensional point, versus a conductive point which could match the object's contour. Another improvement that would remove the need for metal objects would be points that are sufficiently conductive without the body of the object being metal.*
 
-**Triangular Points**
+## Triangular Points
 
 Each object must have [three conductive points](http://liatris.org/2015/02/01/14/) below its base. These points can be anywhere below the base of the object but must have a distinct arrangement as described below.
 

@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "RFID"
-date:   2015-02-01 13:46:08
-answerrostag: "hardware"
+title: RFID
+date: 2015-02-01 13:46:08
+answerrostag: hardware
 ---
 
 An RFID tag must be added to each object in front of the LP and in line with the object's orientation.

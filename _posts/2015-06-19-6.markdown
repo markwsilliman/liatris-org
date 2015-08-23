@@ -7,7 +7,6 @@ answerrostag: "install_turtlebot"
 
 When an object is placed on a touch screen, the [python script](https://github.com/markwsilliman/Liatris/blob/master/TouchScreen/send_touchscreen_points_to_server.py), written with [Kivy](http://kivy.org/), POSTs all three touch points to the local network. The local network will then determine the LP and orientation of the object.
 
-
 We use a multi-touch projected capacitive touch screen that [supports 20 simultaneous touch points](http://liatris.org/2015/02/01/12/). This allows us to accurately determine the pose of many objects placed on the same screen.
 
 *Note: Other types of touch screens, like those that use [infrared touch](https://en.wikipedia.org/wiki/Touchscreen#Infrared_grid), won’t work because Liatris requires multi-touch support.*
@@ -16,7 +15,6 @@ We use a multi-touch projected capacitive touch screen that [supports 20 simulta
 
 [The script](https://github.com/markwsilliman/Liatris/blob/master/TouchScreen/send_touchscreen_points_to_server.py) is brief. Every time a point is read by the touch screen on_touch_down() is called and an object called “touch” is passed to the function.  touch.x & touch.y is the cartesian coordinate.
 
+## Limitations
 
-**Limitations**
-
-Drivers for Linux or Mac weren’t supported, so a Windows computer was used to run the Kivy script.
+Drivers for Linux or Mac weren’t supported for Kivy, so a Windows computer was used to run the script.

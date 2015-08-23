@@ -11,11 +11,11 @@ Liatris is released under the [BSD license](https://en.wikipedia.org/wiki/BSD_li
 
 At this time Liatris is a proof of concept. A stable library is in development.
 
-**Problem**
+## Problem
 
 Although computer vision algorithms are powerful, determining an object's pose and identity exclusively using cameras, LiDAR or structured light is a major obstacle to robotics becoming part of our everyday lives. Also, the introduction of thousands of new products every day further compounds the vision-only approach as many of these products are visually very similar in shape, color, etc., if not identical.
 
- **Solution**
+## Solution
 
  The ability to reliably read an object's pose and identity without relying on vision will help to break down barriers for robotics and many other applications such as augmented reality.
 
