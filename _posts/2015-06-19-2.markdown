@@ -1,31 +1,30 @@
 ---
 layout: post
-title:  "Object Requirements"
-date:   2015-02-01 13:46:07
-answerrostag: "need"
+title: Object Requirements
+date: 2015-02-01T13:46:07.000Z
+answerrostag: need
 ---
 
 **Object Composition**
 
 For right now:
+1. Objects must be rigid to be compatible.
+2. All objects must be metal. The conductive properties of metal objects allows them to be read by projected capacitance touch screens.  [Projected capacitance touch screens](http://liatris.org/2015/02/01/12/) were selected due to their superior multi-touch capabilities.
 
-1. Compatible objects must be rigid.
-2. All objects must be metal due to their conductive properties which allows them to be read by projected capacitance touch screens.  [Projected capacitance touch screens](http://liatris.org/2015/02/01/12/) were selected due to their superior multi-touch capabilities.
-
-*Note: Improvements in the multi-touch capabilities of resistive touch screens, which can be activated by any material, may provide a solution to remove the metal object requirement.  However, this does add the downside of requiring the object to have a three dimensional point, versus a conductive point which could match the object’s contour. Another improvement that would remove the need for metal objects would be points that are sufficiently conductive without the body of the object being metal.*
+_Note: Improvements in the multi-touch capabilities of resistive touch screens, which can be activated by any material, may provide a solution to remove the metal object requirement.  However, this does add the downside of requiring the object to have a three dimensional point, versus a conductive point which could match the object's contour. Another improvement that would remove the need for metal objects would be points that are sufficiently conductive without the body of the object being metal._
 
 **Triangular Points**
 
 Each object must have [three conductive points](http://liatris.org/2015/02/01/14/) below its base. These points can be anywhere below the base of the object but must have a distinct arrangement as described below.
 
-Two of the conductive points should be closer to each other than either is from the third point. This third conductive point is referred to as the “lead point” (we’ll use LP from now on for “lead point”).  The other two points are the “orientation points” (OPs). The orientation of the object is determined by calculating the direction of the line that starts at the midpoint of the OPs and ends at LP.
+Two of the conductive points should be closer to each other than either is from the third point. This third conductive point is referred to as the "lead point" (we'll use LP from now on for "lead point").  The other two points are the "orientation points" (OPs). The orientation of the object is determined by calculating the direction of the line that starts at the midpoint of the OPs and ends at LP.
 
-{% include image.html img="/assets/lpandop.jpg" title="Results of “Layout of LP and OPs" %}
+{% include image.html img="/assets/lpandop.jpg" title="Results of "Layout of LP and OPs" %}
 
-The distance from the LP to the OPs doesn’t matter as long as the OPs are closer to each other than to the LP. OPs are exclusively used to determine the orientation and have nothing to do with determining the object’s dimensions.
+The distance from the LP to the OPs doesn't matter as long as the OPs are closer to each other than to the LP. OPs are exclusively used to determine the orientation and have nothing to do with determining the object's dimensions.
 
-*Note: The number of OPs could be reduced to two points if a screen could determine the type of point, perhaps by comparing size or other [distinct signature](http://liatris.org/2015/02/01/11/).*
+_Note: The number of OPs could be reduced to two points if a screen could determine the type of point, perhaps by comparing size or other [distinct signature](http://liatris.org/2015/02/01/11/)._
 
 [Refer to appendix C on how to add conductive points to an object](http://liatris.org/2015/02/01/14/)
 
-*Cite: The idea for the three point system was inspired by [Vivien Cormier’s solution](https://github.com/VivienCormier/IOSTangibleDetector).*
+_Cite: The idea for the three point system was inspired by [Vivien Cormier's solution](https://github.com/VivienCormier/IOSTangibleDetector)._

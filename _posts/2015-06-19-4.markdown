@@ -1,33 +1,35 @@
 ---
 layout: post
-title:  "API"
-date:   2015-02-01 13:46:09
-answerrostag: "ubuntu"
+title: API
+date: 2015-02-01T13:46:09.000Z
+answerrostag: ubuntu
 ---
 
-The long term goal is to create a [decentralized](http://www.cnbc.com/2014/11/13/forget-currency-bitcoin-tech-could-disrupt-massively.html), open source, global database of objects.  Any manufacturer will be able to add their objects and securely update them at any time. End users’ robots can query the API for any object by passing the object’s RFID tag.
+The long term goal is to create a [decentralized](http://www.cnbc.com/2014/11/13/forget-currency-bitcoin-tech-could-disrupt-massively.html), open source, global database of objects.  Any manufacturer will be able to add their objects and securely update them at any time. End users' robots can query the API for any object by passing the object's RFID tag.
 
 The API returns:
+- STL_FILE: Path to 3D CAD model of the object on the API
+  - The CAD model's file will automatically be cached to the local network.
+  - This file can be added to a [MoveIt](http://liatris.org/2015/02/01/9/) scene as a collision object.
 
-* STL_FILE: Path to 3D CAD model of the object on the API
-    * The CAD model’s file will automatically be cached to the local network.
-    * This file can be added to a [MoveIt](http://liatris.org/2015/02/01/9/) scene as a collision object.
-* Transformation (x and y)
-    * X and y offsets allow you to calculate the 2D center of the base relative to the LP.  We’ll call this the center of the base “COB” from now on. The orientation of the object is taken into account when adjusting offsets.
-    * Offsets are always defined relative to the 3D CAD model’s coordinate system.
-    * Liatris will transform the offsets from the object’s coordinate system to that of the  touch screen.
-    * This is convenient because it may be impossible to put the LP in the center of the base. For example, a pot's (with a long handle) COB may not even be touching the base. Therefore, you place the LP on one side and use offsets to correctly position the object’s CAD model.
+- Transformation (x and y)
+  - X and y offsets allow you to calculate the 2D center of the base relative to the LP.  We'll call this the center of the base "COB" from now on. The orientation of the object is taken into account when adjusting offsets.
+  - Offsets are always defined relative to the 3D CAD model's coordinate system.
+  - Liatris will transform the offsets from the object's coordinate system to that of the  touch screen.
+  - This is convenient because it may be impossible to put the LP in the center of the base. For example, a pot with its long handle may have a COB that doesn't even touch the base. Therefore, place the LP on one side and use offsets to correctly position the object's CAD model.
 
 {% include image.html img="/assets/offsetxy.jpg" title="COB relative to LP" %}
+- Dimensions of the object (x, y and z)
+  - It may be better practice to import this from the CAD model because this data is redundant.
 
-* Dimensions of the object (x, y and z)
-    * It may be better practice to import this from the CAD model because this data is redundant.
-* Grasp pose (x, y, z and yaw)
-    * Defines the ideal pose for the gripper prior to grasping the object, relative to the COB.
-    * All values are relative to the 3D CAD model’s coordinate system.
-    * [In the current version](http://liatris.org/2015/02/01/11/), objects are always grasped with the gripper pointing straight down and rotated as defined by yaw.
-* Color (r,g,b)
-    * Defines the RGB color in which the collision object should be drawn.
-    * Exclusively used by MoveIt's environment.
-* Nickname (a single string)
-    * Used for logs and error reports
+- Grasp pose (x, y, z and yaw)
+  - Defines the ideal pose for the gripper prior to grasping the object, relative to the COB.
+  - All values are relative to the 3D CAD model's coordinate system.
+  - [In the current version](http://liatris.org/2015/02/01/11/), objects are always grasped with the gripper pointing straight down and rotated as defined by yaw.
+
+- Color (r,g,b)
+  - Defines the RGB color in which the collision object should be drawn.
+  - Exclusively used by MoveIt's environment.
+
+- Nickname (a single string)
+  - Used for logs and error reports

@@ -1,17 +1,16 @@
 ---
 layout: post
-title:  "Local Network"
-date:   2015-02-01 13:46:10
-answerrostag: "install_ros"
+title: Local Network
+date: 2015-02-01T13:46:10.000Z
+answerrostag: install_ros
 ---
 
 The touch screen, RFID reader, and robot communicate over a local network.
 
-*Note: For simplicity, the local network code is packaged together with the API.  Therefore, the web server used to host the API also acts as a local network. In practice, the global and local networks would be separate.*
+_Note: For simplicity, the local network code is packaged together with the API.  Therefore, the web server used to host the API also acts as a local network. In practice, the global and local networks would be separate._
 
 The local network is used to:
-
-1. ***POST** points read by the touch screen to a local database.*
-2. ***POST** an RFID tag’s values that are read by the RFID reader’s antenna.*
-3. ***GET** the most recent object and its orientation, calculated by reviewing the last three touch screen points.*
-4. ***GET** the most recent RFID tag value.*
+1. POST points read by the touch screen to a local database.
+2. POST an RFID tag's values that are read by the RFID reader's antenna.
+3. GET the most recent object and its orientation, calculated by reviewing the last three touch screen points.
+4. GET the most recent RFID tag value.
