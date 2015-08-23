@@ -1,8 +1,10 @@
 ---
+
 layout: post
 title: Local Network
 date: 2015-02-01T13:46:10.000Z
 answerrostag: install_ros
+
 ---
 
 The touch screen, RFID reader, and robot communicate over a local network.

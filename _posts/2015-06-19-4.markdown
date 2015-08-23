@@ -1,8 +1,10 @@
 ---
+
 layout: post
 title: API
 date: 2015-02-01T13:46:09.000Z
 answerrostag: ubuntu
+
 ---
 
 The long term goal is to create a [decentralized](http://www.cnbc.com/2014/11/13/forget-currency-bitcoin-tech-could-disrupt-massively.html), open source, global database of objects.  Any manufacturer will be able to add their objects and securely update them at any time. End users' robots can query the API for any object by passing the object's RFID tag.
@@ -19,6 +21,7 @@ The API returns:
   - This is convenient because it may be impossible to put the LP in the center of the base. For example, a pot with its long handle may have a COB that doesn't even touch the base. Therefore, place the LP on one side and use offsets to correctly position the object's CAD model.
 
 {% include image.html img="/assets/offsetxy.jpg" title="COB relative to LP" %}
+
 - Dimensions of the object (x, y and z)
   - It may be better practice to import this from the CAD model because this data is redundant.
 
