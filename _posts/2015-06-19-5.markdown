@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Local Network"
-date: 2015-02-01T13:46:10.000Z
+date: 2015-02-01 13:46:10
 answerrostag: "install_ros"
 ---
 

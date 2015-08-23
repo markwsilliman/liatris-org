@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Object Requirements"
-date: 2015-02-01T13:46:07.000Z
+date: 2015-02-01 13:46:07
 answerrostag: "need"
 ---
 
@@ -10,7 +10,7 @@ answerrostag: "need"
 For right now:
 
 1. Objects must be rigid to be compatible.
-2. All objects must be metal. The conductive properties of metal objects allows them to be read by projected capacitance touch screens.  [Projected capacitance touch screens](http://liatris.org/2015/02/01/12/) were selected due to their superior multi-touch capabilities.
+2. All objects must be metal. The conductive properties of metal objects allows them to be read by projected capacitance touch screens. [Projected capacitance touch screens](http://liatris.org/2015/02/01/12/) were selected due to their superior multi-touch capabilities.
 
 *Note: Improvements in the multi-touch capabilities of resistive touch screens, which can be activated by any material, may provide a solution to remove the metal object requirement.  However, this does add the downside of requiring the object to have a three dimensional point, versus a conductive point which could match the object's contour. Another improvement that would remove the need for metal objects would be points that are sufficiently conductive without the body of the object being metal.*
 
