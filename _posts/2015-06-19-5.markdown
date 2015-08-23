@@ -9,7 +9,7 @@ answerrostag: install_ros
 
 The touch screen, RFID reader, and robot communicate over a local network.
 
-_Note: For simplicity, the local network code is packaged together with the API.  Therefore, the web server used to host the API also acts as a local network. In practice, the global and local networks would be separate._
+*Note: For simplicity, the local network code is packaged together with the API.  Therefore, the web server used to host the API also acts as a local network. In practice, the global and local networks would be separate.*
 
 The local network is used to:
 
