@@ -20,7 +20,7 @@ Each object must have [three conductive points](http://liatris.org/2015/02/01/14
 
 Two of the conductive points should be closer to each other than either is from the third point. This third conductive point is referred to as the "lead point" (we'll use LP from now on for "lead point").  The other two points are the "orientation points" (OPs). The orientation of the object is determined by calculating the direction of the line that starts at the midpoint of the OPs and ends at LP.
 
-{% include image.html img="/assets/lpandop.jpg" title="Results of "Layout of LP and OPs" %}
+{% include image.html img="/assets/lpandop.jpg" title="Results of Layout of LP and OPs" %}
 
 The distance from the LP to the OPs doesn't matter as long as the OPs are closer to each other than to the LP. OPs are exclusively used to determine the orientation and have nothing to do with determining the object's dimensions.
 
