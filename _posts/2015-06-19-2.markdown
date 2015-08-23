@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Object Requirements"
-date: 2015-02-01 13:46:07
+title:  "Object Requirements"
+date:   2015-02-01 13:46:07
 answerrostag: "need"
 ---
 
