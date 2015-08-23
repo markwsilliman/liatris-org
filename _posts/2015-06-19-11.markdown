@@ -4,6 +4,7 @@ title:  "Future Upgrades"
 date:   2015-02-01 13:46:15
 answerrostag: "create_map"
 ---
+
 If we know exactly what an object is and its pose, a lot of opportunities arise. The following is an incomplete list of upgrades that would make Liatris a powerful development library.
 
 * Add pitch and roll to the API’s grasp values.
