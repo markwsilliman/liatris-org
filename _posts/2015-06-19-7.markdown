@@ -5,9 +5,9 @@ date:   2015-02-01 13:46:12
 answerrostag: "networking"
 ---
 
-When an object is placed on the touch screen, the kivy script POSTs the x and y percentages to the local network. To allow the grippers to interact with the object, the script must transform any touch screen point to the robot’s coordinate system.
+When an object is placed on the touch screen, the Kivy script POSTs the x and y percentages to the local network. To allow the grippers to interact with the object, the script must transform any touch screen point to the robot’s coordinate system.
 
-One way to do this is to manually tell the robot where three corners of the screen are relative to its own coordinate system.
+One way to do this is to manually tell the robot where three corners of the screen are, relative to its own coordinate system.
 
 *Note: The fourth corner can be calculated. This could be reduced to two points but three gives some error tolerance.*
 
