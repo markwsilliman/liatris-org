@@ -13,6 +13,6 @@ We use a multi-touch projected capacitive touch screen that [supports 20 simulta
 
 [Kivy](http://kivy.org/) provides an easy way to develop applications for touch screens and is compatible with Python.
 
-[The script](https://github.com/markwsilliman/Liatris/blob/master/TouchScreen/send_touchscreen_points_to_server.py) is brief. Every time a point is read by the touch screen on_touch_down() is called and an object called “touch” is passed to the function.  touch.x & touch.y is the cartesian coordinate.
+[The script](https://github.com/markwsilliman/Liatris/blob/master/TouchScreen/send_touchscreen_points_to_server.py) is brief. Every time a point is read by the touch screen, on_touch_down() is called and an object called “touch” is passed to the function.  touch.x & touch.y is the cartesian coordinate.
 
 {% include image.html img="/assets/screenshot-pot-location.png" title="Liatris reads 3 points on touch screen" %}
