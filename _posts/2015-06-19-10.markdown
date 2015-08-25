@@ -9,4 +9,4 @@ Liatris’ API tells the robot how to grasp an object. This includes x,y and z o
 
 In practice, this results in a reliable mobile manipulation solution.
 
-{% include image.html img="/assets/grasp.png" title="Liatris instructs Baxter how to grasp a kettle" %}
+{% include image.html img="/assets/grasping.png" title="Liatris instructs Baxter how to grasp a kettle" %}
