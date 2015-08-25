@@ -47,7 +47,7 @@ On the Windows computer:
 5. Start send_touch screen_points_to_server.py by using the [Start a Kivy Application instructions](http://kivy.org/docs/installation/installation-windows.html). Tip: Running python send_touch screen_points_to_server.py will not work!
 
 
-To validate it’s running correctly:
+To validate that it’s running correctly:
 
 1. Place a finger on the screen; a randomly colored box should appear.
 2. Check if that point is published to the network by reviewing “Log of points on touch screen” listed under “Setup Local Network & API”.
