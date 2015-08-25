@@ -7,6 +7,7 @@ answerrostag: "create_map"
 
 If we know exactly what an object is and its pose, a lot of opportunities arise. The following is an incomplete list of upgrades that would make Liatris a powerful development library.
 
+* Improvements in the multi-touch capabilities of resistive touch screens, which can be activated by any material, may provide a solution to remove the metal object requirement.
 * Add pitch and roll to the API’s grasp values.
 * The API should include alternative grasp plans in case a collision would be inevitable for the primary plan.
 * Define maximum and minimum grip forces for specific objects.
