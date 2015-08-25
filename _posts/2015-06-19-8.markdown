@@ -13,6 +13,9 @@ In the [example code](https://github.com/markwsilliman/Liatris), the right arm o
 
 The RFID’s antenna reads the RFID tag and POSTs it’s value to the local network.
 
+{% include image.html img="/assets/rfidant.png" title="RFID’s antenna reads the RFID tag" %}
+
+
 A ruby script, [rfid_to_server.py](https://github.com/markwsilliman/Liatris/blob/master/RFID_Reader/rfid_to_server.rb), handles this.
 
 *Note: This script uses [Alien Technology’s Ruby API](http://liatris.org/2015/02/01/12/), but the logic could be applied to any RFID reader’s API.*
