@@ -7,4 +7,4 @@ answerrostag: "first_script"
 
 Liatris’ API tells Baxter how to grasp an object. This includes x,y and z offsets relative to the COB.  The API also returns a yaw value telling the gripper what angle is ideal.
 
-In practice this results in a reliable mobile manipulation solution.
+In practice, this results in a reliable mobile manipulation solution.
