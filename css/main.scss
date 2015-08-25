@@ -42,15 +42,6 @@ $on-laptop:        800px;
     }
 }
 
-@include media-query(desk-wide) {
-  body {
-    background-image:url('http://liatris.org/assets/bg.jpg');
-    background-repeat: no-repeat;
-    background-size: 200px;
-    background-position: 0px 100px;
-  }
-}
-
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
