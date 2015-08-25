@@ -5,7 +5,7 @@ date:   2015-02-01 13:46:16
 answerrostag: "specific_location"
 ---
 
-For the purpose of simple object tests for demo purposes, three capacitive touch points were added to the objects crudely. There are far better approaches to this, but this works for some quick tests, though it only works on metal objects.
+For the purpose of simple object tests for demo purposes, three capacitive touch points were crudely added to the objects. There are far better approaches, and it only works on metal objects, but this works for some quick tests.
 
 Purchase the following items:
 
@@ -19,6 +19,6 @@ Purchase the following items:
 
 ## Steps
 
-1. Rip three replacement tips from the tips housing using pliers.
-2. Using the conductive tape to attach the tips to the object.
+1. Rip three replacement tips from the tips' housing, using pliers.
+2. Using the conductive tape, attach the tips to the object.
 3. To avoid false touch screen reads, cover the entire base (except where the tips are taped) with electrician's tape.
