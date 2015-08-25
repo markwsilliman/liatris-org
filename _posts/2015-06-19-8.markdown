@@ -5,17 +5,17 @@ date:   2015-02-01 13:46:13
 answerrostag: "test_kinect"
 ---
 
-After an object is placed on the touch screen, we know both the undefined object's pose (relative to LP) and orientation. To determine the object’s identity, we read an [UHF RFID tag](https://en.wikipedia.org/wiki/Radio-frequency_identification#Frequencies) placed on the object. The tag must be placed at a specific point on the outer surface of the object. This position is determined by starting at the LP and following the object's orientation until we get to the outer wall.
+After an object is placed on the touch screen, we know both the undefined object's pose (relative to LP) and its orientation. To determine the object’s identity, we read an [UHF RFID tag](https://en.wikipedia.org/wiki/Radio-frequency_identification#Frequencies) placed on the object. The tag must be placed at a specific point on the outer surface of the object. This position is determined by starting at the LP and following the object's orientation until we get to the outer wall.
 
 {% include image.html img="/assets/lptorfid.jpg" title="RFID tag's location relative to LP" %}
 
 In the [example code](https://github.com/markwsilliman/Liatris), the right arm of the robot holds a [RFID antenna](http://liatris.org/2015/02/01/12/).  After an object’s pose is calculated by the local network, the RFID reader is placed 20 cm in front of the LP. The robot also rotates the antenna to be perpendicular to the orientation of the object.
 
-The RFID’s antenna reads the RFID tag and POSTs it’s value to the local network.
+The RFID’s antenna reads the RFID tag and POSTs its value to the local network.
 
 {% include image.html img="/assets/rfidant.png" title="RFID’s antenna reads the RFID tag" %}
 
 
-A ruby script, [rfid_to_server.py](https://github.com/markwsilliman/Liatris/blob/master/RFID_Reader/rfid_to_server.rb), handles this.
+A Ruby script, [rfid_to_server.py](https://github.com/markwsilliman/Liatris/blob/master/RFID_Reader/rfid_to_server.rb), handles this.
 
 *Note: This script uses [Alien Technology’s Ruby API](http://liatris.org/2015/02/01/12/), but the logic could be applied to any RFID reader’s API.*
