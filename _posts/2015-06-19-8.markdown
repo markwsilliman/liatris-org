@@ -5,7 +5,7 @@ date:   2015-02-01 13:46:13
 answerrostag: "test_kinect"
 ---
 
-After an object is placed on the touch screen, we know both the undefined object's pose (relative to LP) and its orientation. To determine the object’s identity, we read an [UHF RFID tag](https://en.wikipedia.org/wiki/Radio-frequency_identification#Frequencies) placed on the object. The tag must be placed at a specific point on the outer surface of the object. This position is determined by starting at the LP and following the object's orientation until we get to the outer wall.
+After an object is placed on the touch screen, Liatris' knows both the undefined object's pose (relative to LP) and its orientation. To determine the object’s identity, read an [UHF RFID tag](https://en.wikipedia.org/wiki/Radio-frequency_identification#Frequencies) placed on the object. The tag must be placed at a specific point on the outer surface of the object. This position is determined by starting at the LP and following the object's orientation to the outer wall.
 
 {% include image.html img="/assets/lptorfid.jpg" title="RFID tag's location relative to LP" %}
 
