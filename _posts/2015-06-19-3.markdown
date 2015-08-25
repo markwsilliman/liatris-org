@@ -5,7 +5,7 @@ date:   2015-02-01 13:46:08
 answerrostag: "hardware"
 ---
 
-An [UHF RFID tag](https://en.wikipedia.org/wiki/Radio-frequency_identification#Frequencies) must be added to each object in front of the LP and in line with the object's orientation.
+An [UHF RFID tag](https://en.wikipedia.org/wiki/Radio-frequency_identification#Frequencies) must be added to each object in front of the LP and in line with the object's orientation.  Refer to the [RFID Reader](http://liatris.org/2015/02/01/8/) page for more details.
 
 {% include image.html img="/assets/lptorfid.jpg" title="RFID tag's location relative to LP" %}
 
