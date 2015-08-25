@@ -5,19 +5,19 @@ date:   2015-02-01 13:46:15
 answerrostag: "autonomous"
 ---
 
-This project could work on a wide range of equipment but for those who want to replicate our results here is the complete hardware list.
+This project could work on a wide range of equipment but for those who want to replicate our results here is the complete hardware list:
 
 * [Rethink Robotics Baxter](http://www.rethinkrobotics.com/)
-    * Dual arm robot, useful because one can control the RFID antenna while the other grips objects. Grippers have an accuracy of around 3mm which is sufficient for this project.
+    * Dual arm robot, useful because one can control the RFID antenna while the other grips objects. Grippers have an accuracy of around 3mm, which is sufficient for this project.
     * At least 1x electric parallel gripper sets.
 * [Planar Helium](http://www.planar.com/products/desktop-touch-screen-monitors/24-inch/helium/) PCT2785 27”
     * Multi-touch, projected capacitive touch technology that supports up to 20 points at a time. Planar offers much larger screens.
 * [Alien Technology ALR-9680](http://www.alientechnology.com/products/readers/commercial-4-port/) development kit
     * This comes with all the hardware you need (reader, antenna, antenna cable, network cables and PoE) and a Ruby, Java and .Net API. The API allows fairly easy modifications of the scripts. Reader can support up to 4x antennas, though we only used one.
-    * Compatible with UHF tags. If you are going to use metal objects make sure you purchase Metal-Mount UHF RFID tags. These include an insulating layer between the tag and the object’s surface, allowing the tags to work.
-* 2x [DBPower Tactical Red Dot laser Sight](http://www.amazon.com/gp/product/B00E7P3D4E)
-    * Any laser point that can pointed straight down and attached to the gripper will work.
-    * DBPower’s sight worked well on Baxter because the handgun mount fit inside Baxter’s electric parallel grippers.
+    * Compatible with UHF tags. If you are going to use metal objects, make sure you purchase Metal-Mount UHF RFID tags. These include an insulating layer between the tag and the object’s surface, allowing the tags to work.
+* 2x [DBPower Tactical Red Dot Laser Sight](http://www.amazon.com/gp/product/B00E7P3D4E)
+    * Any laser point that can aimed straight down and attached to the gripper will work.
+    * DBPower’s sight worked well on Baxter because the handgun mount fits inside Baxter’s electric parallel grippers.
 * Computer running Ubuntu Linux 14.04 or later
 * Computer running Windows 7 or later
 
