@@ -5,6 +5,8 @@ date:   2015-02-01 13:46:14
 answerrostag: "first_script"
 ---
 
-Liatris’ API tells Baxter how to grasp an object. This includes x,y and z offsets relative to the COB.  The API also returns a yaw value telling the gripper what angle is ideal.
+Liatris’ API tells the robot how to grasp an object. This includes x,y and z offsets relative to the COB.  The API also returns a yaw value telling the gripper what angle is ideal.
 
 In practice, this results in a reliable mobile manipulation solution.
+
+{% include image.html img="/assets/grasp.png" title="Liatris instructs Baxter how to grasp a kettle" %}
